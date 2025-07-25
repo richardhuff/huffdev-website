@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - HuffDev</title>
     <meta name="description" content="Portfolio of custom software solutions including Monomidi and other innovative projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -14,7 +17,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Source Sans 3', 'Helvetica', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #ffffff;
@@ -44,9 +47,14 @@
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c3e50;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
         }
 
         .nav-links {
@@ -348,7 +356,9 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">HuffDev</div>
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="HuffDev" />
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
