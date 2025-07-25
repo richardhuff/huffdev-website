@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - HuffDev</title>
+    <meta name="description" content="Portfolio of custom software solutions including Monomidi and other innovative projects.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        .nav-links a.active {
+            color: #3498db;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+        }
+
+        /* Featured Project */
+        .featured-project {
+            margin-bottom: 80px;
+        }
+
+        .project-detail {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .project-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-status {
+            background: #27ae60;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .project-content {
+            padding: 3rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-description h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .project-description p {
+            margin-bottom: 1.5rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .tech-stack {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .tech-stack h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .project-features {
+            margin: 2rem 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+
+        .feature-item h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2980b9;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #3498db;
+            border: 2px solid #3498db;
+        }
+
+        .btn-secondary:hover {
+            background: #3498db;
+            color: white;
+        }
+
+        /* Other Projects */
+        .other-projects {
+            margin-top: 80px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            height: 200px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .project-card-content {
+            padding: 1.5rem;
+        }
+
+        .project-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #3498db;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">HuffDev</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Innovative solutions and custom software applications</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Featured Project: Monomidi -->
+            <section class="featured-project">
+                <div class="project-detail">
+                    <div class="project-header">
+                        <div class="project-status">Live Project</div>
+                        <h2>Monomidi</h2>
+                        <p>Advanced MIDI Processing Tool for Music Production</p>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-grid">
+                            <div class="project-description">
+                                <h3>Project Overview</h3>
+                                <p>Monomidi is a revolutionary MIDI processing application that transforms how musicians and producers work with MIDI data. Built from the ground up to address common pain points in music production workflows.</p>
+                                
+                                <p>The application features real-time MIDI processing, advanced filtering capabilities, and an intuitive interface that makes complex MIDI manipulation accessible to users of all skill levels.</p>
+                                
+                                <h3>Key Achievements</h3>
+                                <p>• Reduced MIDI processing time by 60% compared to traditional workflows<br>
+                                • Supports 10,000+ simultaneous MIDI events without latency<br>
+                                • Used by 500+ musicians and producers worldwide</p>
+                            </div>
+                            
+                            <div class="tech-stack">
+                                <h4>Technology Stack</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Electron</span>
+                                    <span class="tech-tag">WebAudio API</span>
+                                    <span class="tech-tag">MIDI.js</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h3>Features & Capabilities</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h4>Real-time Processing</h4>
+                                    <p>Process MIDI data in real-time with zero-latency performance</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Advanced Filtering</h4>
+                                    <p>Sophisticated filtering options for precise MIDI control</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Cross-platform</h4>
+                                    <p>Works seamlessly on Windows, macOS, and Linux</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h4>Plugin Integration</h4>
+                                    <p>Integrates with popular DAWs and music software</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">View Live Demo</a>
+                            <a href="#" class="btn btn-secondary">Download</a>
+                            <a href="support.html" class="btn btn-secondary">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Other Projects -->
+            <section class="other-projects">
+                <h2 class="section-title">Other Projects</h2>
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <div class="project-image">[Project Screenshot]</div>
+                        <div class="project-card-content">
+                            <h3>Web Dashboard</h3>
+                            <p>Custom analytics dashboard for tracking business metrics with real-time data visualization.</p>
+                            <div class="project-meta">React • Node.js • PostgreSQL</div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">[Project Screenshot]</div>
+                        <div class="project-card-content">
+                            <h3>API Gateway</h3>
+                            <p>Scalable API gateway solution handling 1M+ requests daily with advanced rate limiting.</p>
+                            <div class="project-meta">Node.js • Redis • Docker</div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">[Project Screenshot]</div>
+                        <div class="project-card-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>Full-featured e-commerce solution with payment processing and inventory management.</p>
+                            <div class="project-meta">PHP • MySQL • Stripe API</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="support.html">Support</a>
+            </div>
+            <p>&copy; 2024 HuffDev. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -267,6 +267,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            justify-items: center;
         }
 
         .project-type {
@@ -276,6 +277,8 @@
             text-align: center;
             border: 2px solid transparent;
             transition: all 0.3s ease;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .project-type:hover {
@@ -407,8 +410,6 @@
             <div class="logo">HuffDev</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="support.html">Support</a></li>
             </ul>
@@ -467,7 +468,7 @@
                             <label for="project-type">Project Type</label>
                             <select id="project-type" name="project-type">
                                 <option value="">Select Project Type</option>
-                                <option value="web-app">Web Application</option>
+                                <option value="mobile-app">Mobile Application</option>
                                 <option value="desktop-app">Desktop Application</option>
                                 <option value="api">API Development</option>
                                 <option value="consulting">Technical Consulting</option>
@@ -506,7 +507,7 @@
                         <div class="contact-icon">📧</div>
                         <div class="contact-details">
                             <h3>Email</h3>
-                            <p><a href="mailto:hello@huffdev.com">hello@huffdev.com</a></p>
+                            <p><a href="mailto:richardhuff@gmail.com">richardhuff@gmail.com</a></p>
                         </div>
                     </div>
                     
@@ -514,17 +515,17 @@
                         <div class="contact-icon">💼</div>
                         <div class="contact-details">
                             <h3>LinkedIn</h3>
-                            <p><a href="#" target="_blank">Connect with me</a></p>
+                            <p><a href="https://www.linkedin.com/in/huffdev/" target="_blank">Connect with me</a></p>
                         </div>
                     </div>
                     
-                    <div class="contact-item">
+                    <!-- <div class="contact-item">
                         <div class="contact-icon">💻</div>
                         <div class="contact-details">
                             <h3>GitHub</h3>
                             <p><a href="#" target="_blank">View my code</a></p>
                         </div>
-                    </div>
+                    </div> -->
                     
                     <div class="contact-item">
                         <div class="contact-icon">🌍</div>
@@ -553,37 +554,37 @@
                     
                     <div class="project-type">
                         <div class="project-type-icon">🌐</div>
-                        <h3>Web Applications</h3>
-                        <p>Custom web apps, dashboards, and SaaS platforms</p>
-                        <div class="price-range">$5,000 - $50,000</div>
+                        <h3>Mobile Applications</h3>
+                        <p>Custom mobile apps, cross-platform, and distribution.</p>
+                        <!-- <div class="price-range">$5,000 - $50,000</div> -->
                     </div>
                     
                     <div class="project-type">
                         <div class="project-type-icon">🖥️</div>
                         <h3>Desktop Applications</h3>
                         <p>Cross-platform desktop software and tools</p>
-                        <div class="price-range">$8,000 - $30,000</div>
+                        <!-- <div class="price-range">$8,000 - $30,000</div> -->
                     </div>
                     
                     <div class="project-type">
                         <div class="project-type-icon">🔌</div>
                         <h3>API Development</h3>
                         <p>RESTful APIs, integrations, and microservices</p>
-                        <div class="price-range">$3,000 - $20,000</div>
+                        <!-- <div class="price-range">$3,000 - $20,000</div> -->
                     </div>
                     
-                    <div class="project-type">
+                    <div class="project-type" style="">
                         <div class="project-type-icon">🎯</div>
                         <h3>Specialized Tools</h3>
                         <p>Custom utilities and domain-specific applications</p>
-                        <div class="price-range">$2,000 - $15,000</div>
+                        <!-- <div class="price-range">$2,000 - $15,000</div> -->
                     </div>
                     
                 </div>
             </section>
 
             <!-- FAQ -->
-            <section class="faq-section">
+            <!-- <section class="faq-section">
                 <h2>Frequently Asked Questions</h2>
                 
                 <div class="faq-item">
@@ -611,7 +612,7 @@
                     <div class="faq-answer">I work primarily with JavaScript (Node.js, React), Python, and various databases. I'm also experienced with cloud platforms and modern development tools.</div>
                 </div>
                 
-            </section>
+            </section> -->
 
         </div>
     </main>
@@ -620,10 +621,8 @@
     <footer>
         <div class="container">
             <div class="footer-links">
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
+                <a href="index.html">Home</a>
                 <a href="contact.html">Contact</a>
-                <a href="support.html">Support</a>
             </div>
             <p>&copy; 2024 HuffDev. All rights reserved.</p>
         </div>
