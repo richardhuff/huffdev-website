@@ -1,0 +1,941 @@
+
+I need an idea of where to start. I need an informational website for my freelance software development projects. I currently have one product (Monomidi) that I would like to promote as well as info for contact and support. I have already purchased a domain (huffdev.com) through godaddy. I need to do this with free resources.
+
+Here are some free options to get your freelance software development website up and running:
+
+Free Hosting Platforms
+GitHub Pages is probably your best bet - it's free, reliable, and perfect for developer portfolios. You can use a custom domain (huffdev.com) at no extra cost. Other good options include Netlify or Vercel, which also offer free tiers with custom domain support.
+
+Website Building Approaches
+Static Site Generator: Use Jekyll (works natively with GitHub Pages), Hugo, or 11ty. These let you write in Markdown and generate clean, fast websites.
+
+Simple HTML/CSS/JS: Build from scratch for complete control - great for a clean, professional developer portfolio.
+
+Free Website Builders: GitHub's built-in site generator, or use Netlify's templates.
+
+Essential Pages for Your Site
+Home: Brief intro, your expertise, link to Monomidi
+Projects: Showcase Monomidi with screenshots, description, key features
+About: Your background, skills, development approach
+Contact: Email, possibly a contact form, response time expectations
+Support: FAQ, documentation links, support request process
+Domain Setup
+You'll need to configure your GoDaddy domain's DNS settings to point to your chosen hosting platform. Each platform provides specific instructions for this.
+
+Content Strategy for Monomidi
+Include compelling visuals, clear value proposition, technical details, and maybe a demo video or live example if possible.
+
+Would you like me to elaborate on any of these approaches, or do you have a preference for which direction to explore first?
+
+
+
+
+how do I get started with the project with Github pages?
+
+Here's how to get started with GitHub Pages for your freelance website:
+
+Step 1: Create the Repository
+Go to GitHub.com and create a new repository
+Name it something like huffdev-website or freelance-portfolio
+Make it public (required for free GitHub Pages)
+Check "Add a README file"
+Step 2: Enable GitHub Pages
+Go to your repository's Settings tab
+Scroll down to Pages in the left sidebar
+Under "Source", select Deploy from a branch
+Choose main branch and / (root) folder
+Click Save
+Step 3: Create Your Basic Site Structure
+Create these files directly in GitHub (or clone locally):
+
+index.html          (your homepage)
+about.html          
+projects.html       
+contact.html        
+support.html        
+style.css           
+README.md
+Step 4: Start with a Simple index.html
+GitHub will automatically serve index.html as your homepage. You can create this file right in GitHub's web interface by clicking "Add file" → "Create new file".
+
+Step 5: Connect Your Custom Domain
+In your repository, create a file called CNAME (no extension)
+Put just your domain in it: huffdev.com
+In GoDaddy, update your DNS settings:
+Add a CNAME record: www points to yourusername.github.io
+Add A records for the apex domain pointing to GitHub's IPs
+Step 6: Test Your Site
+Your site will be available at yourusername.github.io/repository-name initially, then at huffdev.com once DNS propagates.
+
+Would you like me to help you create a basic HTML template to get started, or do you need more details about any of these steps?
+
+
+
+
+can you explain #3 in Step 5?
+
+Sure! Step 5 #3 is about configuring your domain's DNS settings in GoDaddy to point to your GitHub Pages site.
+
+What DNS Records to Add in GoDaddy:
+For the www subdomain (www.huffdev.com):
+
+Record Type: CNAME
+Name/Host: www
+Value/Points to: yourusername.github.io (replace "yourusername" with your actual GitHub username)
+For the root domain (huffdev.com): You need to add these A records:
+
+Record Type: A
+Name/Host: @ (this represents your root domain)
+Value/Points to: Add these four IP addresses (create separate A records for each):
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+How to do this in GoDaddy:
+Log into your GoDaddy account
+Go to "My Products" → "DNS" next to your domain
+Click "Add" to create new records
+Create the CNAME and A records as described above
+Why this works:
+The A records tell browsers where to find huffdev.com (GitHub's servers)
+The CNAME tells browsers that www.huffdev.com should go to the same place as your GitHub Pages site
+GitHub Pages will then serve your website content
+The DNS changes can take a few minutes to 48 hours to fully propagate across the internet.
+
+Does this clarify the DNS setup process?
+
+
+
+
+yes
+
+Great! Now that the DNS setup is clear, you have everything you need to get started with GitHub Pages.
+
+Are you ready to create your repository and start building your site, or would you like me to help you with creating some basic HTML templates for your pages first? I could also research current best practices for developer portfolio websites to give you some modern design ideas for showcasing Monomidi and your services.
+
+
+Developer portfolio website research
+
+favicon
+favicon
+favicon
+Research complete
+•
+347 sources
+•
+4m 59s
+Your Developer Portfolio Excellence 2025 report is ready. It covers design trends (neo-minimalism, dark mode, bento-grid layouts), effective project showcase strategies, website architecture best practices, GitHub Pages implementation techniques, and conversion optimization tactics. The report includes specific recommendations for design elements, content structure, and technical implementation to achieve visitor-to-client conversion rates exceeding 5%.
+
+
+Developer Portfolio Excellence in 2025: Modern Design and Conversion Strategies
+Document 
+
+
+
+I have created my repository
+
+I'll research how to set up GitHub Pages effectively and create professional templates for your freelance developer website.
+
+
+Freelance website GitHub Pages
+
+favicon
+favicon
+favicon
+384 sources and counting...
+•
+20m 14s
+
+
+
+can you help me create html templates for my pages
+
+Absolutely! I'll create professional HTML templates for your freelance developer website. Let me start with a modern homepage template that you can customize for your needs.
+
+
+Homepage Template - Freelance Developer
+Interactive artifact 
+Now let me create a projects page template specifically designed to showcase Monomidi and your other work:
+
+
+Projects Page Template
+Interactive artifact 
+Now let me create a contact page template with a professional form:
+
+
+Contact Page Template
+Interactive artifact 
+
+
+
+Continue
+
+
+Contact Page Template
+Interactive artifact ∙ Version 2 
+Perfect! Now let me create the final template - a support page for Monomidi and your other projects:
+
+
+Support Page Template
+Interactive artifact 
+
+
+
+Continue
+
+
+Support Page Template
+Interactive artifact 
+Perfect! I've created four comprehensive HTML templates for your freelance developer website:
+
+Templates Created:
+Homepage - Modern hero section showcasing your services and Monomidi
+Projects Page - Detailed showcase of Monomidi with features, tech stack, and other projects
+Contact Page - Professional contact form with project types, pricing, and FAQ
+Support Page - Comprehensive support center with documentation, FAQ, and downloads
+Key Features of These Templates:
+✅ Modern, Professional Design - Clean layouts with subtle gradients and shadows ✅ Fully Responsive - Mobile-friendly design that works on all devices
+✅ SEO Optimized - Proper meta tags, semantic HTML, and structured content ✅ Monomidi-Focused - Dedicated sections to showcase your main product ✅ Contact Form Ready - Uses Formspree (free service) for form handling ✅ Performance Optimized - Pure CSS, no external dependencies, fast loading
+
+Next Steps:
+Save these as HTML files in your GitHub repository:
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - HuffDev</title>
+    <meta name="description" content="Get help with Monomidi and other software projects. Documentation, tutorials, and support resources.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        .nav-links a.active {
+            color: #3498db;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+        }
+
+        /* Support Categories */
+        .support-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .support-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .support-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .support-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .support-card h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .support-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .support-btn {
+            background: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .support-btn:hover {
+            background: #2980b9;
+        }
+
+        /* Monomidi Documentation */
+        .monomidi-docs {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 4rem;
+        }
+
+        .docs-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .docs-header h2 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .doc-item {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+
+        .doc-item h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .doc-item p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .doc-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .doc-link:hover {
+            text-decoration: underline;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 4rem;
+        }
+
+        .faq-section h2 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .faq-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 1rem;
+        }
+
+        .faq-tab {
+            background: #f8f9fa;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .faq-tab.active {
+            background: #3498db;
+            color: white;
+        }
+
+        .faq-content {
+            display: none;
+        }
+
+        .faq-content.active {
+            display: block;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            color: #2c3e50;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #e9ecef;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        /* Contact Support */
+        .contact-support {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 3rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .contact-support h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-support p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .support-methods {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .support-method {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .support-method h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .support-method p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Downloads Section */
+        .downloads-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .downloads-section h2 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .download-item {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .download-item h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .download-item p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .download-btn {
+            background: #27ae60;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: #219a52;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #3498db;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .support-categories,
+            .docs-grid,
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .support-methods {
+                flex-direction: column;
+            }
+
+            .monomidi-docs,
+            .faq-section,
+            .contact-support,
+            .downloads-section {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">HuffDev</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html" class="active">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Support Center</h1>
+            <p>Get help with your projects and find answers to common questions</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Support Categories -->
+            <section class="support-categories">
+                
+                <div class="support-card">
+                    <div class="support-icon">📚</div>
+                    <h3>Documentation</h3>
+                    <p>Comprehensive guides and API documentation for all projects</p>
+                    <a href="#docs" class="support-btn">Browse Docs</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">❓</div>
+                    <h3>FAQ</h3>
+                    <p>Quick answers to frequently asked questions</p>
+                    <a href="#faq" class="support-btn">View FAQ</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">💬</div>
+                    <h3>Direct Support</h3>
+                    <p>Get personalized help from the developer</p>
+                    <a href="contact.html" class="support-btn">Contact Me</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">⬇️</div>
+                    <h3>Downloads</h3>
+                    <p>Latest versions and updates for all software</p>
+                    <a href="#downloads" class="support-btn">Get Downloads</a>
+                </div>
+                
+            </section>
+
+            <!-- Monomidi Documentation -->
+            <section id="docs" class="monomidi-docs">
+                <div class="docs-header">
+                    <h2>Monomidi Documentation</h2>
+                    <p>Everything you need to get started with Monomidi</p>
+                </div>
+                
+                <div class="docs-grid">
+                    
+                    <div class="doc-item">
+                        <h4>Getting Started</h4>
+                        <p>Installation guide and first steps with Monomidi</p>
+                        <a href="#" class="doc-link">Read Guide →</a>
+                    </div>
+                    
+                    <div class="doc-item">
+                        <h4>User Manual</h4>
+                        <p>Complete user guide with tutorials and examples</p>
+                        <a href="#" class="doc-link">Open Manual →</a>
+                    </div>
+                    
+                    <div class="doc-item">
+                        <h4>API Reference</h4>
+                        <p>Technical documentation for developers and integrations</p>
+                        <a href="#" class="doc-link">View API →</a>
+                    </div>
+                    
+                    <div class="doc-item">
+                        <h4>Troubleshooting</h4>
+                        <p>Common issues and their solutions</p>
+                        <a href="#" class="doc-link">Get Help →</a>
+                    </div>
+                    
+                    <div class="doc-item">
+                        <h4>Video Tutorials</h4>
+                        <p>Step-by-step video guides for key features</p>
+                        <a href="#" class="doc-link">Watch Videos →</a>
+                    </div>
+                    
+                    <div class="doc-item">
+                        <h4>Release Notes</h4>
+                        <p>Latest updates, features, and bug fixes</p>
+                        <a href="#" class="doc-link">View Changes →</a>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-tabs">
+                    <button class="faq-tab active" onclick="showFaqContent('general')">General</button>
+                    <button class="faq-tab" onclick="showFaqContent('monomidi')">Monomidi</button>
+                    <button class="faq-tab" onclick="showFaqContent('technical')">Technical</button>
+                    <button class="faq-tab" onclick="showFaqContent('billing')">Billing</button>
+                </div>
+                
+                <!-- General FAQ -->
+                <div id="general-faq" class="faq-content active">
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What types of projects do you work on?</div>
+                        <div class="faq-answer">I specialize in web applications, desktop software, APIs, and custom tools. My focus is on creating solutions that solve real problems efficiently and elegantly.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How do you handle project support?</div>
+                        <div class="faq-answer">All projects include initial support during launch. Extended support and maintenance packages are available for ongoing needs, including bug fixes, updates, and feature enhancements.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you provide source code?</div>
+                        <div class="faq-answer">Yes, clients receive full source code for custom projects along with documentation and deployment instructions. This ensures you have complete control over your software.</div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Monomidi FAQ -->
+                <div id="monomidi-faq" class="faq-content">
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What operating systems does Monomidi support?</div>
+                        <div class="faq-answer">Monomidi is available for Windows, macOS, and Linux. The application is built with Electron, ensuring consistent functionality across all platforms.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Can I use Monomidi with my DAW?</div>
+                        <div class="faq-answer">Yes! Monomidi integrates with all major DAWs including Ableton Live, Logic Pro, FL Studio, and Pro Tools through standard MIDI protocols.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Is there a free trial available?</div>
+                        <div class="faq-answer">Yes, Monomidi offers a 14-day free trial with full functionality. No credit card required to start your trial.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How often is Monomidi updated?</div>
+                        <div class="faq-answer">Major updates are released quarterly, with bug fixes and minor improvements released as needed. All updates are free for licensed users.</div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Technical FAQ -->
+                <div id="technical-faq" class="faq-content">
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What are the system requirements?</div>
+                        <div class="faq-answer">Minimum: 4GB RAM, 2GHz processor, 500MB disk space. Recommended: 8GB RAM, quad-core processor, SSD storage for optimal performance.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Can I integrate your software with my existing systems?</div>
+                        <div class="faq-answer">Most of my software includes API access and integration capabilities. Custom integration work is available as part of development or support packages.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you provide technical documentation?</div>
+                        <div class="faq-answer">Yes, comprehensive documentation is provided including user guides, API references, and integration examples. Documentation is kept up-to-date with each release.</div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Billing FAQ -->
+                <div id="billing-faq" class="faq-content">
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What payment methods do you accept?</div>
+                        <div class="faq-answer">I accept bank transfers, PayPal, and major credit cards. For larger projects, milestone-based payment schedules can be arranged.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you offer refunds?</div>
+                        <div class="faq-answer">Custom development projects include milestone approvals to ensure satisfaction. Product licenses include a 30-day money-back guarantee if you're not satisfied.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Are there discounts for multiple projects?</div>
+                        <div class="faq-answer">Yes, I offer volume discounts for clients with multiple projects or ongoing development needs. Contact me to discuss custom pricing.</div>
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <!-- Contact Support -->
+            <section class="contact-support">
+                <div class="container">
+                    <h2>Need Personal Support?</h2>
+                    <p>Can't find what you're looking for? Get in touch for personalized assistance</p>
+                    
+                    <div class="support-methods">
+                        
+                        <div class="support-method">
+                            <h4>📧 Email Support</h4>
+                            <p>Response within 24 hours</p>
+                            <p><strong>support@huffdev.com</strong></p>
+                        </div>
+                        
+                        <div class="support-method">
+                            <h4>🚨 Priority Support</h4>
+                            <p>Same-day response for clients</p>
+                            <p><strong>Available for active projects</strong></p>
+                        </div>
+                        
+                        <div class="support-method">
+                            <h4>📞 Video Call</h4>
+                            <p>Screen sharing and live help</p>
+                            <p><strong>By appointment</strong></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Downloads Section -->
+            <section id="downloads" class="downloads-section">
+                <h2>Downloads</h2>
+                
+                <div class="download-grid">
+                    
+                    <div class="download-item">
+                        <h4>Monomidi v2.1.0</h4>
+                        <p>Latest stable release with bug fixes and performance improvements</p>
+                        <a href="#" class="download-btn">Download Now</a>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                            Windows | macOS | Linux<br>
+                            Released: March 15, 2024
+                        </p>
+                    </div>
+                    
+                    <div class="download-item">
+                        <h4>User Manual PDF</h4>
+                        <p>Complete user guide and tutorial documentation</p>
+                        <a href="#" class="download-btn">Download PDF</a>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                            40 pages | 2.5MB<br>
+                            Updated: March 10, 2024
+                        </p>
+                    </div>
+                    
+                    <div class="download-item">
+                        <h4>Sample Projects</h4>
+                        <p>Example MIDI files and project templates to get you started</p>
+                        <a href="#" class="download-btn">Download Samples</a>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                            ZIP Archive | 15MB<br>
+                            10 sample projects included
+                        </p>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="support.html">Support</a>
+            </div>
+            <p>&copy; 2024 HuffDev. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showFaqContent(category) {
+            // Hide all FAQ content
+            const contents = document.querySelectorAll('.faq-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.faq-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected content and activate tab
+            document.getElementById(category + '-faq').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+Free Portfolio Website for Software Developer - Claude
